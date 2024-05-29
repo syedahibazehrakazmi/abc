@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+ 
+    }
+
+    header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #2ecc71;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Media query for devices with a screen width of 600 pixels or less */
+    @media only screen and (max-width: 600px) {
+      header, footer {
+        font-size: 18px;
+      }
+      section {
+        font-size: 16px;
+      }
+     
+    }
+
+    /* Media query for devices with a screen width between 601 and 1024 pixels */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      header, footer {
+        font-size: 24px;
+      
+      }
+      section {
+        font-size: 20px;
+      }
+    }
+
+    /* Media query for devices with a screen width of 1025 pixels or more */
+    @media only screen and (min-width: 1025px) {
+      header, footer {
+        font-size: 30px;
+      }
+      section {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Website</h1>
+  </header>
+
+  <section>
+ 
+    <p>This is the main content of the website.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Responsive Website</p>
+  </footer>
+
+</body>
+</html>
