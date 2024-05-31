@@ -5,7 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    /* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    margin: 20px;
+  }
+}
+</style>
 <body>
-    <h5>this is my last commit file</h5>
+    <div class="card">
+        <img src="image4.jpg" alt="Image 4">
+        <div class="card-content">
+          <h3>Card Title</h3>
+          <p>This is a sample card with an image, text, and a button.</p>
+          <a href="#" class="btn">Click Me</a>
+        </div>
+      </div>
 </body>
 </html>
