@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="assign.xsl" type="text/xsl"?>
+<form>
+<Employee>
+     <empname>Aliya Naz</empname>
+     <empno>190</empno>
+     <Designation>Faculty Member</Designation>
+     <salary>1500</salary>
+     <CNIC>42101-2345762-0</CNIC>
+</Employee>
+
+<Employee>
+     <empname>Areesha jamal</empname>
+     <empno>180</empno>
+     <Designation>CAH </Designation>
+     <salary>1200</salary>
+     <CNIC>42101-2365762-0</CNIC>
+</Employee>
+
+<Employee>
+     <empname>Hareem shah</empname>
+     <empno>180</empno>
+     <Designation>Academic coordinator</Designation>
+     <salary>1800</salary>
+     <CNIC>42101-2343462-0</CNIC>
+</Employee>
+
+<Employee>
+     <empname>Alina waqar</empname>
+     <empno>100</empno>
+     <Designation>Faculty Member</Designation>
+     <salary>1700</salary>
+     <CNIC>42101-2348962-0</CNIC>
+</Employee>
+</form>

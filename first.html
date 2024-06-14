@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        document.writeln(`<h1>JSON DATATYPE</h1>`);
+
+        var student={
+            "enrol_id":3456,      //integer
+            "name":"JohnDoe",   //string
+            "eligible" : true,      //boollean
+            "marks" : 89.0,          //float
+            'subject': ["XML" , "JSON" , "JAVASCRIPT"],  //ARRAY
+            'intro': { "name": "hashim","surname": "ali","location": "Nazimabad"}  //keystore in json
+
+        };
+
+        document.writeln(student.enrol_id +'</br>');
+        document.writeln(student.name +'</br>');
+        document.writeln(student.marks +'</br>');
+        document.writeln(student.subject[1] +'</br>');
+
+
+
+
+        
+        document.writeln('<h1>Json Data using for loop</h1>');
+
+        var flower={
+            "name": "white rose", "color":"white", "Fragnance":"Mild"
+        };
+        for(floral in flower){
+            document.write(floral+'/');   //thisign shows the key 
+            document.write(flower[floral]+'</br>')  //this shows the value of the key 
+        };
+
+    </script>
+</body>
+
+</html>

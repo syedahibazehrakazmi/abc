@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE departments
+[ <!ELEMENT departments (depart+)>
+<!ELEMENT depart (dept_name, no_of_employees, avg_salary, floor)>
+<!ELEMENT dept_name (#PCDATA)>
+<!ELEMENT no_of_employees (#PCDATA)>
+<!ELEMENT avg_salary (#PCDATA)>
+<!ELEMENT floor (#PCDATA)>
+
+<!ELEMENT depart_name (#PCDATA)>
+<!ATTLIST dept_name center_name  CDATA #REQUIRED>
+<!ATTLIST avg_salary years  #REQUIRED>
+]
+>
+<!-- <!DOCTYPE note 
+[<!ELEMENT note (To,From,name,message)>
+<!ELEMENT To (#PCDATA)>
+<!ELEMENT From (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT message (#PCDATA)>
+<!ATTLIST name firstname CDATA #REQUIRED>
+<!ATTLIST name lastname CDATA #REQUIRED>
+<!ATTLIST message subject CDATA #REQUIRED>
+<!ENTITY  loc "North Karachi">
+]>
+
+
+ <note>
+    <To>Hashim</To>
+    <From>Hashim</From>
+    <name firstname ="hamid" lastname="saleem">Hashim &loc;</name>
+    <message subject="Important">hello</message>
+ </note> -->
+ 
+
+<departments>
+  <depart  IT Department>
+    <dept_name > Information Technology &center_name; </dept_name>
+    <no_of_employees>50</no_of_employees>
+    <avg_salary Years="2000">50000</avg_salary>
+    <floor>3</floor>
+  </depart>
+  <depart  Sales Department>
+    <dept_name>Sales and Marketing</dept_name>
+    <no_of_employees>20</no_of_employees>
+    <avg_salary>60000</avg_salary>
+    <floor>4</floor>
+  </depart>
+</departments>

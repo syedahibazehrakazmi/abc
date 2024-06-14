@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="form">
+        <xs:complexType>
+            <xs:sequence>
+    <xs:element name="Employee" maxOccurs="unbounded">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="empname">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="3"></xs:minLength>
+                            <xs:maxLength value="16"></xs:maxLength>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <!-- /end (code) -->
+                <xs:element name="empno">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="10"></xs:minInclusive>
+                            <xs:maxInclusive value="1000"></xs:maxInclusive>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <!-- /end (code) -->
+                <xs:element name="Designation">
+                 <xs:simpleType>
+                    <xs:restriction base="xs:string"> 
+                        <xs:enumeration value="Faculty Member"></xs:enumeration>
+                        <xs:enumeration value="CAH "></xs:enumeration>
+                        <xs:enumeration value="Academic coordinator"></xs:enumeration>
+                    </xs:restriction>
+                 </xs:simpleType>
+                </xs:element>
+                <!-- /end (code) -->
+                <xs:element name="salary">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="1000"></xs:minInclusive>
+                            <xs:maxInclusive value="1900"></xs:maxInclusive>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <!-- /end (code) -->
+                <xs:element name="CNIC">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[0-9]{5}-[0-9]{7}-[0-9]{1}"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                     
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+
+        
+    </xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
