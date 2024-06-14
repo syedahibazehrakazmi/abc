@@ -28,9 +28,9 @@
         document.writeln(student.subject[1] +'</br>');
 
 
+//-----------------------------------------------------------------------------------------------------------
 
 
-        
         document.writeln('<h1>Json Data using for loop</h1>');
 
         var flower={
@@ -41,6 +41,26 @@
             document.write(flower[floral]+'</br>')  //this shows the value of the key 
         };
 
+
+
+
+// --------------------------------------------------------------------------------------------------------------
+        document.writeln('<h1>Json Array data using for loop</h1>');
+        var institute ={
+            "SEMESTER":["CPISM","DISM","HDSE-1","HDSE-11","ADSE-I","ADSE-II"],
+            "records":[{"name":"hashim", "Bc":"2211f4"},{"name":"Aliya", "Bc":"2w334e"}]
+        };
+
+        for(keys in institute.records){
+            for(inner_key in institute.records[keys]){
+                document.write(institute.records[keys][inner_key]+'</br>');
+            }
+
+        }
+
+
+
+    
     </script>
 </body>
 
